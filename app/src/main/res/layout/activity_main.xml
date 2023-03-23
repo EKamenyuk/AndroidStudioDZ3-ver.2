@@ -22,78 +22,128 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/netology_48dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/favorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/baseline_favorite_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
 
     <ImageView
         android:id="@+id/more"
         android:layout_width="29dp"
         android:layout_height="49dp"
-        android:src="@drawable/baseline_more_vert_24"
-        tools:ignore="MissingConstraints"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="15dp"
         android:background="@android:color/transparent"
-        tools:layout_editor_absoluteX="366dp"
-        tools:layout_editor_absoluteY="21dp" />
+        android:src="@drawable/baseline_more_vert_24"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/polyline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/baseline_polyline_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textToShare"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
 
     <ImageView
         android:id="@+id/visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/baseline_visibility_24"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="362dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="320dp"
         android:layout_height="27dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
         android:text="Нетология. Университет интернет-профессий, "
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="21dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="130dp"
         android:layout_height="23dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
         android:text="21 мая в 18:36"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="imageView,textView"/>
+        app:constraint_referenced_ids="imageView,textView" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="accelerate"/>
+        app:constraint_referenced_ids="accelerate" />
+
+    <TextView
+        android:id="@+id/textLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="15dp"
+        android:text="9999"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
+
+    <TextView
+        android:id="@+id/textToShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2"
+         />
+
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="15dp"
+        android:text="1547"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
